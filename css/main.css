@@ -3,4 +3,13 @@
     object-fit: cover;
     width: 20%;
 }
-
+.carousel-item > img {
+    height: 30%;
+    object-fit:cover;
+    object-position:center;
+}
+.card > img {
+    height: 200px;
+    object-fit: cover;
+    width: 300px;;
+}
