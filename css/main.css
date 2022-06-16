@@ -13,3 +13,11 @@
     object-fit: cover;
     width: 300px;;
 }
+.carousel > img {
+    height: 200%;
+    object-fit: cover;
+} 
+.item > img{
+    height: 150px;
+    object-fit: cover;
+}
