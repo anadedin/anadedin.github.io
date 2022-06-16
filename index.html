@@ -67,5 +67,118 @@
       </nav>
 
     
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagini/carusel 1.jpg" class="d-block w-100" alt="...">
+    
+          </div>
+          <div class="carousel-item">
+            <img src="imagini/carusel 2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagini/carusel 3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagini/carusel 4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagini/carusel 3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+   
+
+
+
+
+
+
+<footer class="bg-warning text-white p-2">
+  <p class="text-center">
+    &copy;Toate drepturile rezervate 2022
+
+  </p>
+</footer>
+<script>
+  let paragraphs = document.querySelectorAll('.card-text');
+  [...paragraphs].forEach(p => {
+    p.innerText = p.innerText.substr(0, 40) + ' ...'
+  })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        loop: true
+      }
+    },
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true
+  });
+  $('.play').on('click', function () {
+    owl.trigger('play.owl.autoplay', [1000])
+  })
+  $('.stop').on('click', function () {
+    owl.trigger('stop.owl.autoplay')
+  })
+</script>
+
+
+
+
+
 </body>
 </html>
